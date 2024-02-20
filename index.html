@@ -16,8 +16,12 @@
 
     <script>
         document.getElementById('portada').addEventListener('click', function() {
-  this.style.left = '1000px';
+  const portada = this;
+  portada.style.left = '1000px'; 
+
+  setTimeout(function() {
+    portada.style.left = '0'; 
+  }, 5000); 
 });
     </script>
-</body>
-</html>
+    </body>
